@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background: #c3aafd;
+    height: 60px;
+}
+header>div{
+    font-size: 30px;
+    padding: 10px 15%;
+    font-weight: 600;
+}
+main{
+    width: 100%;
+}
+#upper{
+    display: flex;
+    padding: 10px;
+    margin: 30px 15%;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    width: 40%;
+}
+form{
+    margin: 20px 10px;
+    display: grid;
+    gap: 8px;
+    grid-template-rows: 40px 40px 40px;
+}
+h1{
+    font-weight:600;
+    font-size: 25px;
+}
+p{
+    font-weight: 500;
+    font-size: 20px;
+}
+#submit{
+    background-color: #c3aafd;
+}
+#submit:hover{
+    background-color: #8c5cfb;
+}
+
+@media only screen and (max-width: 600px) {
+    #upper{
+        flex-direction: column-reverse;
+    }
+    .banner{
+        width: 70%;
+        margin: 10%;
+    }
+}
+
+#spinner{
+    display: none;
+}
+#lower {
+    display: block; /* Change from flex to block */
+    margin: 30px 15%;
+    text-align: center; /* Optional for centering */
+}
+#qrcode{
+    display: flex;
+    justify-content: center;
+
+}
+#save-link {
+    display: inline-block; /* Use inline-block for proper positioning */
+    margin-top: 20px; /* Add spacing from previous content */
+    background-color: #9e77f8;
+    height: 40px;
+    width: 140px;
+    line-height: 40px; /* Center text vertically */
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#save-link:hover {
+    background-color: #8c5cfb;
+}
+
+
